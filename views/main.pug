@@ -1,0 +1,22 @@
+doctype html 
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title My Post
+link(rel="stylesheet", href="./style/main.css")
+header
+  h1 Mywork
+  h1#userName()=name
+  nav
+    ul
+      li
+        a Home
+      li
+        a(href="profile") Profile
+      li
+        a(href="login") Deconnect
+main
+  .post
+    textarea#MyNews(name="news", placeholder="Wrtie something to post ....", cols="50", rows="10")
+    button#post post
+  #news
+     

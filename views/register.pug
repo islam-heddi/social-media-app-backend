@@ -1,0 +1,35 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Register
+link(rel="stylesheet", href="./style/style.css")
+main
+    a#home(href="/") Home
+    h1 Register
+    p.erorr
+        | You have problem with 
+        span#erorr
+    form(name="form1")
+        table
+            tr
+            td.
+                
+                User name :
+                
+            td
+                input#name(type="text", placeholder="Your name")
+            tr
+            td.
+                
+                Password :
+                
+            td
+                input#password(type="password", placeholder="************")
+            tr
+            td.
+                
+                Email :
+                
+            td
+                input#email(type="email", name="text1", placeholder="example@email.com")
+        button#submit_btn submit
+        button(type="reset") reset

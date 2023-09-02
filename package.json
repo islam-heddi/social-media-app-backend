@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.0.1",
+    "pug": "^3.0.2"
+  },
+  "name": "mywork",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Groupe of 30 DAYS BACKEND",
+  "license": "ISC",
+  "description": ""
+}

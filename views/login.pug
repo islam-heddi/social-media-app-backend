@@ -1,0 +1,30 @@
+doctype HTML
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Login
+link(rel="stylesheet", href="./style/style.css")
+main
+  a#home(href="/") Home
+  h1 Login
+  p.erorr#erorr-1
+    | Erorr : 
+    span#problems
+  form(action="/user" method="POST")
+    table
+      tbody
+        tr
+          td.
+            
+            Email :
+            
+          td
+            input#email(type="email", name="email", placeholder="example@email.com")
+        tr
+          td.
+            
+            Password :
+            
+          td
+            input#password(type="password", name="password", placeholder="***********")
+    button#login_btn Login
+script(src="./script/script.js")

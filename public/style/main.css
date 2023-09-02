@@ -1,0 +1,85 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#userName:hover{
+    cursor: pointer;
+    color: blanchedalmond;
+}
+
+header{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(36, 36, 146);
+    color: white;
+    & > nav{
+        & > ul{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            & > li{
+                cursor: pointer;
+                text-decoration: none;
+                list-style: none;
+                & > a {
+                    color: white;
+                    text-decoration: none;
+                }
+                & > a:hover{
+                    color: red;
+                }
+            }
+            & > li:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    width: 50%;
+    & > .post{
+        margin: 12px;
+        background-color: rgb(218, 218, 218);
+        padding: 12px;
+        display: inline-flex;
+        flex-direction: column; 
+        gap: 12px;  
+        & > button {
+            padding: 12px;
+            font-size: 19px;
+            color: white;
+            background-color: rgb(13, 13, 137);
+        }
+        & > button:hover{
+            background-color: rgb(129, 121, 215);
+        }
+    }
+    & > #news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & > .my_post{
+            padding: 15px;
+            border: 1px solid black;
+            background-color: rgb(218, 218, 218);
+            & > p:last-child{
+                background-color: white;
+                padding: 12px;
+                margin: 12px;
+            }
+        }
+    }
+}
