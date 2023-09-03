@@ -2,21 +2,48 @@
     {
         "id" : 1,
         "name" : "islam he",
-        "publish" : "Iam working in the data stuff"
+        "publish" : "Iam working in the data stuff",
+        "comments" : [
+            {
+                "id" : 1,
+                "name" : "bill gates",
+                "comment" : "what you think yourself"
+            },
+            {
+                "id" : 2,
+                "name":"Steve job",
+                "comment": "we all love what you do"
+            }
+        ]
     },
     {
         "id" : 2,
-        "name" : "Ken paul",
-        "publish" : "i live in paris"
+        "name" : "Steve job",
+        "publish" : "i live in silicon valley",
+        "comments" : [
+            {
+                "id" : 1,
+                "name" : "islam he",
+                "comment": "i live in algeria"
+            }
+        ]
     },
     {
         "id" : 3,
-        "name" : "Ken paul",
-        "publish" : "i know iam beutifull"
+        "name" : "Steve job",
+        "publish" : "i know iam beutifull",
+        "comments" : []
     },
     {
         "id" : 4,
         "name" : "bill gates",
-        "publish" : "welcome to the next future technology"
+        "publish" : "welcome to the next future technology",
+        "comments" : [
+            {
+                "id" : 1,
+                "name" : "islam he",
+                "comment": "keep up"
+            }
+        ]
     }
 ]

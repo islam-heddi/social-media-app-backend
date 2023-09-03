@@ -7,9 +7,8 @@ main
   a#home(href="/") Home
   h1 Login
   p.erorr#erorr-1
-    | Erorr : 
-    span#problems
-  form(action="/user" method="POST")
+    span#problems=problems
+  form(action="/login" method="POST")
     table
       tbody
         tr

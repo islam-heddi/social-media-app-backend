@@ -9,14 +9,28 @@ header
   nav
     ul
       li
-        a Home
-      li
-        a(href="profile") Profile
-      li
         a(href="login") Deconnect
 main
-  .post
-    textarea#MyNews(name="news", placeholder="Wrtie something to post ....", cols="50", rows="10")
-    button#post post
+  form(action='/main' method="POST")
+    .post
+      textarea#MyNews(name="news_post", placeholder="Wrtie something to post ....", cols="50", rows="10")
+      button#post post
   #news
+      each item in data
+        .my_post
+          h1=item.name
+          p.ThePost()=item.publish
+          if item.name == name 
+            form(action="delete/" + item.id , method="POST")
+              button(type="submit") Delete Post 
+          form(action="comment/" + item.id , method="POST")
+            input(type="text" placeholder="comment" name="comment")
+            button(type="submit") comment
+          each comment in item.comments
+            b=comment.name
+            p=comment.comment 
+            if comment.name == name
+              form(action="delete-comment/"+ item.id + comment.id, method="POST") 
+                button(type="submit") Delete Comment
+
      
